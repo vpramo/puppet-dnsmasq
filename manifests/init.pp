@@ -17,5 +17,4 @@ class dnsmasq {
 
   anchor { 'dnsmasq::end': require => Class['dnsmasq::service'], }
   notice("in dnsmasq")
-  Common::Line <<| tag == 'dnsmasq-host' |>>
 }
